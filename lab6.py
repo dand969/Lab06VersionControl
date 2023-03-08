@@ -6,6 +6,7 @@ def encode(string):
 		encoded+=str((int(i)+3)%10)
 	return encoded
 
+#Function added by Weston
 def decode(encoded):
     dec_pass = ''
     for digit in encoded:
