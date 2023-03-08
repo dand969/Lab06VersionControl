@@ -1,3 +1,5 @@
+#Author: Daniel Delgado Granados
+#Email: delgadogranados@ufl.edu
 def encode(string):
 	encoded = ''
 	for i in string:
