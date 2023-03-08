@@ -6,6 +6,24 @@ def encode(string):
 		encoded+=str((int(i)+3)%10)
 	return encoded
 
+def decode(encoded):
+    dec_pass = ''
+    for digit in encoded:
+        if int(digit) >= 3:
+            idx = int(digit) - 3
+            dec_pass += str(idx)
+        elif int(digit) == 2:
+            idx = 9
+            dec_pass += str(idx)
+        elif int(digit) == 1:
+            idx = 8
+            dec_pass += str(idx)
+        elif int(digit) == 0:
+            idx = 7
+            dec_pass += str(idx)
+    return dec_pass
+
+
 def main():
 	option_chosen = 0
 	while option_chosen!=3:
